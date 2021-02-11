@@ -21,6 +21,10 @@ body {
   background-color: #1ABC9C;
 }
 
+.bg-lightblue {
+  background-color: #3A546D;
+}
+
 .white {
   color: #FFF;
 }
@@ -45,12 +49,24 @@ body {
   padding-bottom: 2em;
 }
 
+.pb-3 {
+  padding-bottom: 3em;
+}
+
 .pt-2 {
   padding-top: 2em;
 }
 
+.pt-3 {
+  padding-top: 3em;
+}
+
 .mb-1 {
   margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
 }
 
 .mt-1 {
@@ -60,6 +76,22 @@ body {
 /* NAV-BAR */
 .navbar {
   border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-toggle {
+  border: 1px solid #FFFFFF;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #2c3e50;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: #2c3e50;
 }
 
 .navbar-default .navbar-brand {
@@ -220,16 +252,106 @@ body {
   text-decoration: none;
 }
 
+/* CONTACT ME */
+.contact-me h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.form-control {
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid lightgrey;
+  }
+
+.form-control:focus {
+  border-bottom: 1px solid lightgrey;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #2c3e50;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.btn-send {
+  background-color: #1ABC9C;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.btn-send:hover {
+  color: #fff;
+  background-color: rgba(10, 140, 100, 0.9);
+}
+
+.btn-send:focus, .btn-send:active:focus {
+  outline: none;
+}
+
+/* FOOTER */
+.location p, .freelancer p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-socials {
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.btn-facebook {
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.btn-google {
+  font-size: 14px;
+  padding: 15px 17px;
+}
+
+.btn-twitter {
+  font-size: 15px;
+  padding: 15px 18px;
+}
+
+.btn-linkedin {
+  font-size: 16px;
+  padding: 15px 19px;
+}
+
+.btn-socials:hover, .btn-socials:focus {
+  background-color: #FFF;
+  color: #000000;
+}
+ .freelancer p a {
+  color: #1ABC9C;
+ }
+
+ .freelancer p a:hover {
+   color: rgba(10, 140, 100, 0.9);
+ }
+
+ .copyright {
+   color: #FFF;
+   font-size: 14px;
+   font-weight: 500;
+ }
 /* MEDIA QUERIES */
 /* Small devices (tablets, 768px and up) */
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* HEADER */
   .navbar-default .navbar-brand  {
     font-size: 20px;
   }
 
   .jumbo h1 {
-    font-size: 35px;
+    font-size: 50px;
   }
 
   .line {
@@ -240,21 +362,34 @@ body {
   .jumbo P {
     font-size: 20px;
   }
-  /* MAIN */
-  /* ABOUT */
-  .about h2 {
+
+  .portfolio h2, .about h2, .contact-me h2{
     font-size: 40px;
+  }
+
+  .about-text {
+    font-size: 1.5em;
+  }
+
+  .location h4, .freelancer h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .socials h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 @media all and (min-width: 992px) and (max-width: 1199px) {
-  /* HEADER */
+
   .navbar-default .navbar-brand  {
     font-size: 27px;
   }
 
   .jumbo h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .line {
@@ -265,22 +400,38 @@ body {
   .jumbo P {
     font-size: 24px;
   }
-  /* MAIN */
-  /* ABOUT */
-  .about h2 {
+
+  .portfolio h2, .about h2, .contact-me h2 {
     font-size: 50px;
   }
+
+  .about-text {
+    font-size: 1.5em;
+  }
+
+  .location h4, .freelancer h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .socials h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .copyright p {
+    font-size: 16px;
+  }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media all and (min-width: 1200px) {
-  /* HEADER */
   .navbar-default .navbar-brand  {
     font-size: 27px;
   }
 
   .jumbo h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .line {
@@ -292,10 +443,29 @@ body {
     font-size: 24px;
   }
 
-  /* MAIN */
-  /* ABOUT */
-  .about h2 {
+  .portfolio h2, .about h2, .contact-me h2 {
     font-size: 50px;
   }
 
+  .about-text {
+    font-size: 1.55em;
+  }
+
+  .location h4, .freelancer h4 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .socials h4 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .location p, .freelancer p {
+    font-size: 21px;
+  }
+
+  .copyright p {
+    font-size: 16px;
+  }
 }

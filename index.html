@@ -23,7 +23,6 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -33,9 +32,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right text-white">
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#first">PORTFOLIO</a></li>
+                <li><a href="#second">ABOUT</a></li>
+                <li><a href="#third">CONTACT</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div>
@@ -63,8 +62,8 @@
       </div>
     </header>
     <main>
-      <!-- PORTFOLIO -->
-      <section>
+      <!-- SECTION 1 Portfolio -->
+      <section id="first" class="pt-2 pb-2">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -162,8 +161,8 @@
           </div>
         </div>
       </section>
-      <!-- ABOUT -->
-      <section class="about bg-green pb-2">
+      <!-- SECTION 2 About -->
+      <section id="second" class="about bg-green pt-2 pb-3">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -180,12 +179,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-5 col-md-offset-1 col-lg-6 col-lg-offset-0">
               <p class="about-text white mb-1">
                 Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
               </p>
             </div>
-            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-5 col-lg-5 col-md-offset-0">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-5 col-lg-6 col-md-offset-0">
               <p class="about-text white">
                 Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perferct starting point!
               </p>
@@ -196,7 +195,87 @@
           </div>
         </div>
       </section>
+      <!-- SECTION 3 Contact me -->
+      <section id="third" class="pt-2 pb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="contact-me text-center pt-2">
+                <h2>CONTACT ME</h2>
+                <div class="divider">
+                  <div class="line bo-blue"></div>
+                  <div class="icon blue">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="line bo-blue"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+              <form class="pb-2">
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="name" class="form-control" id="exampleInputName1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1"></label>
+                  <input type="password" class="form-control" id="exampleInputPhoneNumber1" placeholder="Phone Number">
+                </div>
+                <textarea class="form-control" rows="8" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn-send mt-1">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="text-center bg-lightblue">
+      <section class="pb-3 pt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="location pt-2">
+                <h4 class="white">LOCATION</h4>
+                <p>2215 John Daniel Drive Clark, MO 54243</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="socials pt-2 mb-2">
+                <h4 class="white mb-2">AROUND THE WEB</h4>
+                  <a class="btn-socials btn-facebook" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn-socials btn-google" href="#" role="button"><i class="fab fa-google-plus-g"></i></a>
+                  <a class="btn-socials btn-twitter" href="#" role="button"><i class="fab fa-twitter"></i></a>
+                  <a class="btn-socials btn-linkedin" href="#" role="button"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="freelancer pt-2 pb-2">
+                <h4 class="white">ABOUT FREELANCER</h4>
+                <p>Freelancer is a free to use, open source Bootstrap theme created by <a href="#">StartBootstrap</a>.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div class="container-fluid bg-blue pt-2 pb-3">
+          <div class="row pt-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="copyright text-center">
+                <p>Copyright © Your Website 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
